@@ -11,7 +11,7 @@ app = Flask(__name__)
 BOT_TOKEN = os.environ.get('BOT_TOKEN')
 ADMIN_CHAT_ID = os.environ.get('ADMIN_CHAT_ID')
 VERCEL_URL = os.environ.get('VERCEL_URL')
-AFFILIATE_LINK = os.environ.get('AFFILIATE_LINK', 'https://lkpq.cc/73f2')
+AFFILIATE_LINK = os.environ.get('AFFILIATE_LINK', 'https://1wyaay.com/casino/list?open=register&p=2qeb&sub1=10')
 
 # Storage
 users_data = {}
