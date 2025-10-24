@@ -36,7 +36,7 @@ MINES_SIGNALS = [
     {"traps": 1, "accuracy": 94, "grid": ["🔒🔒💰🔒🔒", "🔒🔒💰🔒🔒", "💰🔒🔒🔒🔒", "🔒💰🔒🔒🔒", "🔒💰🔒🔒🔒"]}
 ]
 
-# Complete Language Messages
+# Complete Language Messages with ALL 5 Languages
 MESSAGES = {
     'en': {
         'welcome': '✅ <b>You selected English!</b>',
@@ -64,7 +64,12 @@ MESSAGES = {
         'check_deposit': '🔍 Check Deposit',
         'register_btn': '📲 Register',
         'check_registration_btn': '🔍 Check Registration',
-        'motivational': "💎 You're missing your chance to win big! /start to get Prediction now 🚀"
+        'motivational': "💎 You're missing your chance to win big! /start to get Prediction now 🚀",
+        'signal_title': '💣 <b>Mines - Signals</b> 💣',
+        'select_traps': '💣 <b>Select:</b> {} traps',
+        'accuracy': '💡 <b>Accuracy:</b> {}%',
+        'open_cells': '👉 <b>Open the cells</b> 👇',
+        'get_new_signal': '❇️ <b>Get a new signal</b> 👇'
     },
     'hi': {
         'welcome': '✅ <b>आपने हिंदी चुनी!</b>',
@@ -92,7 +97,12 @@ MESSAGES = {
         'check_deposit': '🔍 जमा जांचें',
         'register_btn': '📲 पंजीकरण',
         'check_registration_btn': '🔍 पंजीकरण जांचें',
-        'motivational': "💎 आप बड़ी जीत का मौका खो रहे हैं! भविष्यवाणी प्राप्त करने के लिए /start दबाएं 🚀"
+        'motivational': "💎 आप बड़ी जीत का मौका खो रहे हैं! भविष्यवाणी प्राप्त करने के लिए /start दबाएं 🚀",
+        'signal_title': '💣 <b>Mines - सिग्नल</b> 💣',
+        'select_traps': '💣 <b>चुनें:</b> {} जाल',
+        'accuracy': '💡 <b>सटीकता:</b> {}%',
+        'open_cells': '👉 <b>कोशिकाएं खोलें</b> 👇',
+        'get_new_signal': '❇️ <b>नया सिग्नल प्राप्त करें</b> 👇'
     },
     'bn': {
         'welcome': '✅ <b>আপনি বাংলা নির্বাচন করেছেন!</b>',
@@ -120,7 +130,12 @@ MESSAGES = {
         'check_deposit': '🔍 জমা পরীক্ষা করুন',
         'register_btn': '📲 নিবন্ধন',
         'check_registration_btn': '🔍 নিবন্ধন পরীক্ষা',
-        'motivational': "💎 আপনি বড় জয়ের সুযোগ হারাচ্ছেন! ভবিষ্যদ্বাণী পেতে /start টিপুন 🚀"
+        'motivational': "💎 আপনি বড় জয়ের সুযোগ হারাচ্ছেন! ভবিষ্যদ্বাণী পেতে /start টিপুন 🚀",
+        'signal_title': '💣 <b>Mines - সিগন্যাল</b> 💣',
+        'select_traps': '💣 <b>নির্বাচন করুন:</b> {} ফাঁদ',
+        'accuracy': '💡 <b>সঠিকতা:</b> {}%',
+        'open_cells': '👉 <b>সেল খুলুন</b> 👇',
+        'get_new_signal': '❇️ <b>নতুন সিগন্যাল পান</b> 👇'
     },
     'ur': {
         'welcome': '✅ <b>آپ نے اردو منتخب کی!</b>',
@@ -148,7 +163,12 @@ MESSAGES = {
         'check_deposit': '🔍 ڈپازٹ چیک کریں',
         'register_btn': '📲 رجسٹر',
         'check_registration_btn': '🔍 رجسٹریشن چیک کریں',
-        'motivational': "💎 آپ بڑی جیت کا موقع کھو رہے ہیں! پیشن گوئی حاصل کرنے کے لیے /start دبائیں 🚀"
+        'motivational': "💎 آپ بڑی جیت کا موقع کھو رہے ہیں! پیشن گوئی حاصل کرنے کے لیے /start دبائیں 🚀",
+        'signal_title': '💣 <b>Mines - سگنل</b> 💣',
+        'select_traps': '💣 <b>منتخب کریں:</b> {} جال',
+        'accuracy': '💡 <b>درستگی:</b> {}%',
+        'open_cells': '👉 <b>خانے کھولیں</b> 👇',
+        'get_new_signal': '❇️ <b>نیا سگنل حاصل کریں</b> 👇'
     },
     'ne': {
         'welcome': '✅ <b>तपाईंले नेपाली चयन गर्नुभयो!</b>',
@@ -176,7 +196,12 @@ MESSAGES = {
         'check_deposit': '🔍 जम्मा जाँच गर्नुहोस्',
         'register_btn': '📲 दर्ता',
         'check_registration_btn': '🔍 दर्ता जाँच',
-        'motivational': "💎 तपाईं ठूलो जित्ने मौका गुमाउँदै हुनुहुन्छ! भविष्यवाणी प्राप्त गर्न /start थिच्नुहोस् 🚀"
+        'motivational': "💎 तपाईं ठूलो जित्ने मौका गुमाउँदै हुनुहुन्छ! भविष्यवाणी प्राप्त गर्न /start थिच्नुहोस् 🚀",
+        'signal_title': '💣 <b>Mines - सिग्नल</b> 💣',
+        'select_traps': '💣 <b>छान्नुहोस्:</b> {} जाल',
+        'accuracy': '💡 <b>सटिकता:</b> {}%',
+        'open_cells': '👉 <b>कोठाहरू खोल्नुहोस्</b> 👇',
+        'get_new_signal': '❇️ <b>नयाँ सिग्नल प्राप्त गर्नुहोस्</b> 👇'
     }
 }
 
@@ -250,26 +275,30 @@ def update_user(user_id, **kwargs):
 def check_1win_user_status(player_id):
     """
     Check user status from 1Win postback system
-    This function will verify if user registered and deposited through our affiliate link
     """
     try:
         # Check if we have stored postback events for this player
-        user_events = [event for event in postback_events if event.get('user_id') == player_id]
+        user_events = [event for event in postback_events if str(event.get('user_id')) == str(player_id)]
+        
+        print(f"🔍 Checking user {player_id}, found {len(user_events)} events")
         
         if not user_events:
             return "not_registered"
         
         # Check for registration event
-        has_registration = any(event.get('event_type') == 'registration' for event in user_events)
+        has_registration = any(
+            event.get('event_type') in ['registration', 'Registration', 'REGISTRATION', 'register', 'reg'] 
+            for event in user_events
+        )
         
         # Calculate total deposits
         total_deposit = sum(
             float(event.get('amount', 0)) 
             for event in user_events 
-            if event.get('event_type') in ['first_deposit', 'deposit', 'recurring_deposit']
+            if event.get('event_type') in ['first_deposit', 'deposit', 'recurring_deposit', 'Deposit', 'FIRST_DEPOSIT', 'first_deposit', 'recurring']
         )
         
-        print(f"User {player_id} - Registered: {has_registration}, Total Deposit: ${total_deposit}")
+        print(f"📊 User {player_id} - Registered: {has_registration}, Total Deposit: ${total_deposit}")
         
         if not has_registration:
             return "not_registered"
@@ -279,7 +308,7 @@ def check_1win_user_status(player_id):
             return "verified"
             
     except Exception as e:
-        print(f"Error checking 1Win user status: {e}")
+        print(f"❌ Error checking 1Win user status: {e}")
         return "not_registered"
 
 def show_language_selection(chat_id):
@@ -392,19 +421,19 @@ def handle_get_signal(chat_id, message_id):
     update_user(chat_id, predictions_used=predictions_used + 1)
     
     signal_text = (
-        f"💣 <b>Mines - Signals</b> 💣\n"
+        f"{get_message(language, 'signal_title')}\n"
         f"➖➖➖➖➖➖➖\n"
-        f"💣 <b>Select:</b> {signal['traps']} traps\n"
-        f"💡 <b>Accuracy:</b> {signal['accuracy']}%\n"
+        f"{get_message(language, 'select_traps').format(signal['traps'])}\n"
+        f"{get_message(language, 'accuracy').format(signal['accuracy'])}\n"
         f"➖➖➖➖➖➖➖\n"
-        f"👉 <b>Open the cells</b> 👇\n\n"
+        f"{get_message(language, 'open_cells')}\n\n"
     )
     
     for row in signal['grid']:
         signal_text += f"{row}\n"
     
     signal_text += f"\n➖➖➖➖➖➖➖\n"
-    signal_text += f"❇️ <b>Get a new signal</b> 👇"
+    signal_text += f"{get_message(language, 'get_new_signal')}"
     
     keyboard = {
         'inline_keyboard': [
@@ -431,19 +460,19 @@ def handle_next_signal(chat_id, message_id):
     update_user(chat_id, predictions_used=predictions_used + 1)
     
     signal_text = (
-        f"💣 <b>Mines - Signals</b> 💣\n"
+        f"{get_message(language, 'signal_title')}\n"
         f"➖➖➖➖➖➖➖\n"
-        f"💣 <b>Select:</b> {signal['traps']} traps\n"
-        f"💡 <b>Accuracy:</b> {signal['accuracy']}%\n"
+        f"{get_message(language, 'select_traps').format(signal['traps'])}\n"
+        f"{get_message(language, 'accuracy').format(signal['accuracy'])}\n"
         f"➖➖➖➖➖➖➖\n"
-        f"👉 <b>Open the cells</b> 👇\n\n"
+        f"{get_message(language, 'open_cells')}\n\n"
     )
     
     for row in signal['grid']:
         signal_text += f"{row}\n"
     
     signal_text += f"\n➖➖➖➖➖➖➖\n"
-    signal_text += f"❇️ <b>Get a new signal</b> 👇"
+    signal_text += f"{get_message(language, 'get_new_signal')}"
     
     keyboard = {
         'inline_keyboard': [
@@ -552,47 +581,86 @@ def set_webhook():
             return f"❌ Webhook error: {e}"
     return "❌ BOT_TOKEN not set"
 
-@app.route('/postback', methods=['GET'])
-def handle_postback():
+# 1WIN POSTBACK ENDPOINT - With ALL Parameters
+@app.route('/1win-postback', methods=['GET'])
+def handle_1win_postback():
     """
-    1Win se postback receive karega
+    1Win Postback Endpoint with ALL parameters
     """
     try:
-        event_type = request.args.get('type', 'unknown')
-        user_id = request.args.get('user_id') or request.args.get('hash_id') or request.args.get('player_id')
+        # Get ALL parameters from 1Win
+        event_id = request.args.get('event_id', '')
+        date = request.args.get('date', '')
+        hash_id = request.args.get('hash_id', '')
+        hash_name = request.args.get('hash_name', '')
+        source_id = request.args.get('source_id', '')
+        source_name = request.args.get('source_name', '')
         amount = request.args.get('amount', 0, type=float)
+        transaction_id = request.args.get('transaction_id', '')
+        country = request.args.get('country', '')
+        user_id = request.args.get('user_id', '')
+        sub1 = request.args.get('sub1', '')
         
-        print(f"🔔 1Win Postback received - Type: {event_type}, User: {user_id}, Amount: ${amount}")
+        # Determine event type based on parameters
+        event_type = 'unknown'
+        if amount > 0:
+            if 'first' in hash_name.lower() or 'first' in source_name.lower():
+                event_type = 'first_deposit'
+            else:
+                event_type = 'deposit'
+        else:
+            if 'register' in hash_name.lower() or 'registration' in source_name.lower():
+                event_type = 'registration'
+            elif 'recurring' in hash_name.lower():
+                event_type = 'recurring_deposit'
+        
+        print(f"🎯 1Win Postback Received:")
+        print(f"   Event Type: {event_type}")
+        print(f"   User ID: {user_id}")
+        print(f"   Amount: ${amount}")
+        print(f"   Hash ID: {hash_id}")
+        print(f"   Source: {source_name}")
         
         # Store the postback event
         postback_events.append({
             'event_type': event_type,
             'user_id': user_id,
             'amount': amount,
+            'event_id': event_id,
+            'date': date,
+            'hash_id': hash_id,
+            'hash_name': hash_name,
+            'source_id': source_id,
+            'source_name': source_name,
+            'transaction_id': transaction_id,
+            'country': country,
+            'sub1': sub1,
             'timestamp': time.time()
         })
         
-        # Admin ko notification bheje
+        # Admin notification
         if ADMIN_CHAT_ID:
             admin_message = (
-                f"🔄 New 1Win Postback\n"
-                f"Type: {event_type}\n"
+                f"🔄 1Win Postback - {event_type.upper()}\n"
                 f"User ID: {user_id}\n"
                 f"Amount: ${amount}\n"
+                f"Source: {source_name}\n"
                 f"Time: {time.ctime()}"
             )
             send_message(ADMIN_CHAT_ID, admin_message)
         
+        # Return success response to 1Win
         return jsonify({
             "status": "success",
-            "event": event_type,
+            "message": "Postback received successfully",
+            "event_type": event_type,
             "user_id": user_id,
             "amount": amount
         }), 200
         
     except Exception as e:
-        print(f"Postback error: {e}")
-        return jsonify({"status": "error"}), 500
+        print(f"❌ 1Win Postback error: {e}")
+        return jsonify({"status": "error", "message": str(e)}), 500
 
 @app.route('/debug')
 def debug():
@@ -600,7 +668,7 @@ def debug():
         "users_count": len(users_data),
         "postbacks_count": len(postback_events),
         "webhook_url": f"{VERCEL_URL}/webhook",
-        "postback_events": postback_events[-10:]  # Last 10 events
+        "postback_events": postback_events[-5:]  # Last 5 events
     })
 
 if __name__ == '__main__':
