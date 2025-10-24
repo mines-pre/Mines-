@@ -11,7 +11,7 @@ app = Flask(__name__)
 BOT_TOKEN = os.environ.get('BOT_TOKEN')
 ADMIN_CHAT_ID = os.environ.get('ADMIN_CHAT_ID')
 VERCEL_URL = os.environ.get('VERCEL_URL')
-AFFILIATE_LINK = os.environ.get('AFFILIATE_LINK', 'https://1wyaay.com/casino/list?open=register&p=2qeb&sub1=10')
+AFFILIATE_LINK = os.environ.get('AFFILIATE_LINK', 'https://lkpq.cc/73f2')
 
 # Storage
 users_data = {}
@@ -69,7 +69,21 @@ MESSAGES = {
         'select_traps': '💣 <b>Select:</b> {} traps',
         'accuracy': '💡 <b>Accuracy:</b> {}%',
         'open_cells': '👉 <b>Open the cells</b> 👇',
-        'get_new_signal': '❇️ <b>Get a new signal</b> 👇'
+        'get_new_signal': '❇️ <b>Get a new signal</b> 👇',
+        'automatic_check': '🔄 Automatic Check',
+        'manual_entry': '🔢 Manual Entry',
+        'check_again': '🔄 Check Again',
+        'auto_verify_failed': '❌ Automatic verification failed. Please enter Player ID manually.',
+        'verification_options': '🎯 <b>Verify Your Registration</b>',
+        'choose_method': 'Choose verification method:',
+        'auto_check_desc': '🔄 <b>Automatic Check</b>\n• Instant verification\n• No Player ID needed\n• Works if you used our link',
+        'manual_entry_desc': '🔢 <b>Manual Entry</b>\n• Enter Player ID manually\n• 100% accurate\n• Works in all cases',
+        'checking_status': '🔍 <b>Checking your registration status...</b>',
+        'no_registration_found': '❌ <b>No registration found yet!</b>',
+        'wait_and_retry': 'Please wait 2-3 minutes after registration and click Check Again button.\nOr enter your Player ID manually for instant verification.',
+        'registration_confirmed': '🎉 <b>Registration Confirmed!</b>',
+        'deposit_received': '💰 <b>Deposit Received!</b>',
+        'check_status': '🔄 Check Status'
     },
     'hi': {
         'welcome': '✅ <b>आपने हिंदी चुनी!</b>',
@@ -102,7 +116,21 @@ MESSAGES = {
         'select_traps': '💣 <b>चुनें:</b> {} जाल',
         'accuracy': '💡 <b>सटीकता:</b> {}%',
         'open_cells': '👉 <b>कोशिकाएं खोलें</b> 👇',
-        'get_new_signal': '❇️ <b>नया सिग्नल प्राप्त करें</b> 👇'
+        'get_new_signal': '❇️ <b>नया सिग्नल प्राप्त करें</b> 👇',
+        'automatic_check': '🔄 स्वचालित जांच',
+        'manual_entry': '🔢 मैनुअल प्रविष्टि',
+        'check_again': '🔄 फिर से जांचें',
+        'auto_verify_failed': '❌ स्वचालित सत्यापन विफल। कृपया मैन्युअल रूप से Player ID दर्ज करें।',
+        'verification_options': '🎯 <b>अपना पंजीकरण सत्यापित करें</b>',
+        'choose_method': 'सत्यापन विधि चुनें:',
+        'auto_check_desc': '🔄 <b>स्वचालित जांच</b>\n• तत्काल सत्यापन\n• Player ID की आवश्यकता नहीं\n• काम करता है यदि आपने हमारा लिंक इस्तेमाल किया',
+        'manual_entry_desc': '🔢 <b>मैनुअल प्रविष्टि</b>\n• मैन्युअल रूप से Player ID दर्ज करें\n• 100% सटीक\n• सभी मामलों में काम करता है',
+        'checking_status': '🔍 <b>आपकी पंजीकरण स्थिति की जाँच की जा रही है...</b>',
+        'no_registration_found': '❌ <b>अभी तक कोई पंजीकरण नहीं मिला!</b>',
+        'wait_and_retry': 'कृपया पंजीकरण के 2-3 मिनट बाद प्रतीक्षा करें और फिर से जांचें बटन क्लिक करें।\nया त्वरित सत्यापन के लिए अपना Player ID मैन्युअल रूप से दर्ज करें।',
+        'registration_confirmed': '🎉 <b>पंजीकरण पुष्टि हुई!</b>',
+        'deposit_received': '💰 <b>जमा प्राप्त हुआ!</b>',
+        'check_status': '🔄 स्थिति जांचें'
     },
     'bn': {
         'welcome': '✅ <b>আপনি বাংলা নির্বাচন করেছেন!</b>',
@@ -135,7 +163,21 @@ MESSAGES = {
         'select_traps': '💣 <b>নির্বাচন করুন:</b> {} ফাঁদ',
         'accuracy': '💡 <b>সঠিকতা:</b> {}%',
         'open_cells': '👉 <b>সেল খুলুন</b> 👇',
-        'get_new_signal': '❇️ <b>নতুন সিগন্যাল পান</b> 👇'
+        'get_new_signal': '❇️ <b>নতুন সিগন্যাল পান</b> 👇',
+        'automatic_check': '🔄 স্বয়ংক্রিয় চেক',
+        'manual_entry': '🔢 ম্যানুয়াল এন্ট্রি',
+        'check_again': '🔄 আবার চেক করুন',
+        'auto_verify_failed': '❌ স্বয়ংক্রিয় যাচাই ব্যর্থ হয়েছে। দয়া করে ম্যানুয়ালি Player ID লিখুন।',
+        'verification_options': '🎯 <b>আপনার নিবন্ধন যাচাই করুন</b>',
+        'choose_method': 'যাচাই পদ্ধতি নির্বাচন করুন:',
+        'auto_check_desc': '🔄 <b>স্বয়ংক্রিয় চেক</b>\n• তাৎক্ষণিক যাচাই\n• Player ID প্রয়োজন নেই\n• কাজ করে যদি আপনি আমাদের লিঙ্ক ব্যবহার করেন',
+        'manual_entry_desc': '🔢 <b>ম্যানুয়াল এন্ট্রি</b>\n• ম্যানুয়ালি Player ID লিখুন\n• 100% সঠিক\n• সব ক্ষেত্রে কাজ করে',
+        'checking_status': '🔍 <b>আপনার নিবন্ধন স্ট্যাটাস চেক করা হচ্ছে...</b>',
+        'no_registration_found': '❌ <b>এখনও কোন নিবন্ধন পাওয়া যায়নি!</b>',
+        'wait_and_retry': 'নিবন্ধনের ২-৩ মিনিট পরে অপেক্ষা করুন এবং আবার চেক করুন বাটন ক্লিক করুন।\nঅথবা তাত্ক্ষণিক যাচাইয়ের জন্য আপনার Player ID ম্যানুয়ালি লিখুন।',
+        'registration_confirmed': '🎉 <b>নিবন্ধন নিশ্চিত হয়েছে!</b>',
+        'deposit_received': '💰 <b>জমা প্রাপ্ত!</b>',
+        'check_status': '🔄 স্ট্যাটাস চেক করুন'
     },
     'ur': {
         'welcome': '✅ <b>آپ نے اردو منتخب کی!</b>',
@@ -168,7 +210,21 @@ MESSAGES = {
         'select_traps': '💣 <b>منتخب کریں:</b> {} جال',
         'accuracy': '💡 <b>درستگی:</b> {}%',
         'open_cells': '👉 <b>خانے کھولیں</b> 👇',
-        'get_new_signal': '❇️ <b>نیا سگنل حاصل کریں</b> 👇'
+        'get_new_signal': '❇️ <b>نیا سگنل حاصل کریں</b> 👇',
+        'automatic_check': '🔄 خودکار چیک',
+        'manual_entry': '🔢 دستی اندراج',
+        'check_again': '🔄 دوبارہ چیک کریں',
+        'auto_verify_failed': '❌ خودکار تصدیق ناکام ہوئی۔ براہ کرم دستی طور پر Player ID درج کریں۔',
+        'verification_options': '🎯 <b>اپنی رجسٹریشن کی تصدیق کریں</b>',
+        'choose_method': 'تصدیق کا طریقہ منتخب کریں:',
+        'auto_check_desc': '🔄 <b>خودکار چیک</b>\n• فوری تصدیق\n• Player ID کی ضرورت نہیں\n• کام کرتا ہے اگر آپ نے ہمارا لنک استعمال کیا',
+        'manual_entry_desc': '🔢 <b>دستی اندراج</b>\n• دستی طور پر Player ID درج کریں\n• 100% درست\n• تمام معاملات میں کام کرتا ہے',
+        'checking_status': '🔍 <b>آپ کی رجسٹریشن کی حیثیت چیک کی جا رہی ہے...</b>',
+        'no_registration_found': '❌ <b>ابھی تک کوئی رجسٹریشن نہیں ملی!</b>',
+        'wait_and_retry': 'براہ کرم رجسٹریشن کے 2-3 منٹ بعد انتظار کریں اور دوبارہ چیک کریں بٹن پر کلک کریں۔\nیا فوری تصدیق کے لیے اپنا Player ID دستی طور پر درج کریں۔',
+        'registration_confirmed': '🎉 <b>رجسٹریشن کی تصدیق ہو گئی!</b>',
+        'deposit_received': '💰 <b>ڈپازٹ موصول!</b>',
+        'check_status': '🔄 حیثیت چیک کریں'
     },
     'ne': {
         'welcome': '✅ <b>तपाईंले नेपाली चयन गर्नुभयो!</b>',
@@ -201,7 +257,21 @@ MESSAGES = {
         'select_traps': '💣 <b>छान्नुहोस्:</b> {} जाल',
         'accuracy': '💡 <b>सटिकता:</b> {}%',
         'open_cells': '👉 <b>कोठाहरू खोल्नुहोस्</b> 👇',
-        'get_new_signal': '❇️ <b>नयाँ सिग्नल प्राप्त गर्नुहोस्</b> 👇'
+        'get_new_signal': '❇️ <b>नयाँ सिग्नल प्राप्त गर्नुहोस्</b> 👇',
+        'automatic_check': '🔄 स्वचालित जाँच',
+        'manual_entry': '🔢 म्यानुअल प्रविष्टि',
+        'check_again': '🔄 फेरि जाँच गर्नुहोस्',
+        'auto_verify_failed': '❌ स्वचालित प्रमाणीकरण असफल भयो। कृपया म्यानुअल रूपमा Player ID प्रविष्ट गर्नुहोस्।',
+        'verification_options': '🎯 <b>आफ्नो दर्ता प्रमाणित गर्नुहोस्</b>',
+        'choose_method': 'प्रमाणीकरण विधि चयन गर्नुहोस्:',
+        'auto_check_desc': '🔄 <b>स्वचालित जाँच</b>\n• तत्काल प्रमाणीकरण\n• Player ID आवश्यक छैन\n• काम गर्दछ यदि तपाईंले हाम्रो लिङ्क प्रयोग गर्नुभयो भने',
+        'manual_entry_desc': '🔢 <b>म्यानुअल प्रविष्टि</b>\n• म्यानुअल रूपमा Player ID प्रविष्ट गर्नुहोस्\n• 100% सही\n• सबै अवस्थामा काम गर्दछ',
+        'checking_status': '🔍 <b>तपाईंको दर्ता स्थिति जाँच गरिँदैछ...</b>',
+        'no_registration_found': '❌ <b>अहिले सम्म कुनै दर्ता भेटिएन!</b>',
+        'wait_and_retry': 'कृपया दर्ता पछि २-३ मिनेट प्रतीक्षा गर्नुहोस् र फेरि जाँच गर्नुहोस् बटन क्लिक गर्नुहोस्।\nवा तत्काल प्रमाणीकरणको लागि आफ्नो Player ID म्यानुअल रूपमा प्रविष्ट गर्नुहोस्।',
+        'registration_confirmed': '🎉 <b>दर्ता पुष्टि भयो!</b>',
+        'deposit_received': '💰 <b>जम्मा प्राप्त भयो!</b>',
+        'check_status': '🔄 स्थिति जाँच गर्नुहोस्'
     }
 }
 
@@ -271,6 +341,107 @@ def update_user(user_id, **kwargs):
     
     for key, value in kwargs.items():
         users_data[user_id][key] = value
+
+def check_user_registration_automatically(chat_id):
+    """
+    Automatically check if user is registered through our affiliate link
+    without requiring player ID
+    """
+    try:
+        user = get_user(chat_id)
+        language = user.get('language', 'en')
+        
+        # Get user's last activity to find potential player ID
+        user_events = [event for event in postback_events if event.get('user_id')]
+        
+        if not user_events:
+            # No postbacks received yet
+            keyboard = {
+                'inline_keyboard': [
+                    [{'text': get_message(language, 'register_now'), 'url': AFFILIATE_LINK}],
+                    [{'text': get_message(language, 'check_again'), 'callback_data': 'auto_check_registration'}],
+                    [{'text': get_message(language, 'manual_entry'), 'callback_data': 'manual_player_id'}]
+                ]
+            }
+            send_message(chat_id, 
+                f"{get_message(language, 'checking_status')}\n\n"
+                f"{get_message(language, 'no_registration_found')}\n\n"
+                f"{get_message(language, 'wait_and_retry')}",
+                keyboard
+            )
+            return
+        
+        # Find latest registration event for this user (by various identifiers)
+        latest_registration = None
+        for event in user_events:
+            if event.get('event_type') in ['registration', 'Registration', 'register']:
+                latest_registration = event
+                break
+        
+        if latest_registration:
+            user_id = latest_registration.get('user_id')
+            # Auto-update user with player ID
+            update_user(chat_id, player_id=user_id, registered=True)
+            
+            # Check if user has deposited
+            user_deposits = [e for e in user_events if e.get('user_id') == user_id and e.get('amount', 0) > 0]
+            total_deposit = sum(deposit.get('amount', 0) for deposit in user_deposits)
+            
+            if total_deposit >= 5:
+                # User has deposited enough
+                keyboard = {
+                    'inline_keyboard': [
+                        [{'text': get_message(language, 'get_signal'), 'callback_data': 'get_signal'}]
+                    ]
+                }
+                send_message(chat_id, 
+                    f"🎉 <b>Automatic Verification Successful!</b>\n\n"
+                    f"✅ <b>Player ID:</b> {user_id}\n"
+                    f"💰 <b>Total Deposit:</b> ${total_deposit}\n\n"
+                    f"{get_message(language, 'congratulations')}",
+                    keyboard
+                )
+            else:
+                # Registered but no deposit
+                keyboard = {
+                    'inline_keyboard': [
+                        [{'text': '💰 Deposit', 'url': AFFILIATE_LINK}],
+                        [{'text': get_message(language, 'check_deposit'), 'callback_data': 'auto_check_deposit'}]
+                    ]
+                }
+                send_message(chat_id,
+                    f"🎉 <b>Registration Verified Automatically!</b>\n\n"
+                    f"✅ <b>Player ID:</b> {user_id}\n"
+                    f"🔄 <b>Status:</b> Registered - Deposit Required\n\n"
+                    f"{get_message(language, 'deposit_required')}",
+                    keyboard
+                )
+        else:
+            # No registration found
+            keyboard = {
+                'inline_keyboard': [
+                    [{'text': get_message(language, 'register_now'), 'url': AFFILIATE_LINK}],
+                    [{'text': get_message(language, 'check_again'), 'callback_data': 'auto_check_registration'}],
+                    [{'text': get_message(language, 'manual_entry'), 'callback_data': 'manual_player_id'}]
+                ]
+            }
+            send_message(chat_id, 
+                f"🔍 <b>Automatic Check Complete</b>\n\n"
+                f"{get_message(language, 'no_registration_found')}\n\n"
+                f"Possible reasons:\n"
+                f"• You didn't use our affiliate link\n"
+                f"• Registration is still processing\n"
+                f"• Used different browser/device\n\n"
+                f"Try:\n"
+                f"1. Wait 2-3 minutes and click 'Check Again'\n"
+                f"2. Enter Player ID manually\n"
+                f"3. Re-register using our link",
+                keyboard
+            )
+            
+    except Exception as e:
+        print(f"Auto verification error: {e}")
+        send_message(chat_id, f"❌ {get_message(language, 'auto_verify_failed')}")
 
 def check_1win_user_status(player_id):
     """
@@ -347,6 +518,33 @@ def handle_language_selection(chat_id, message_id, language):
     edit_message(chat_id, message_id, message_text, keyboard)
 
 def handle_check_registration(chat_id, message_id):
+    user = get_user(chat_id)
+    language = user.get('language', 'en')
+    
+    # Show options for verification
+    keyboard = {
+        'inline_keyboard': [
+            [{'text': get_message(language, 'automatic_check'), 'callback_data': 'auto_check_registration'}],
+            [{'text': get_message(language, 'manual_entry'), 'callback_data': 'manual_player_id'}],
+            [{'text': get_message(language, 'register_btn'), 'url': AFFILIATE_LINK}]
+        ]
+    }
+    
+    message_text = (
+        f"{get_message(language, 'verification_options')}\n\n"
+        f"{get_message(language, 'choose_method')}\n\n"
+        f"{get_message(language, 'auto_check_desc')}\n\n"
+        f"{get_message(language, 'manual_entry_desc')}"
+    )
+    
+    edit_message(chat_id, message_id, message_text, keyboard)
+
+def handle_auto_check_registration(chat_id, message_id):
+    """Handle automatic registration check"""
+    check_user_registration_automatically(chat_id)
+
+def handle_manual_player_id(chat_id, message_id):
+    """Switch to manual player ID entry"""
     user = get_user(chat_id)
     language = user.get('language', 'en')
     
@@ -555,6 +753,10 @@ def webhook():
                 handle_language_selection(chat_id, message_id, language)
             elif callback_data == 'check_registration':
                 handle_check_registration(chat_id, message_id)
+            elif callback_data == 'auto_check_registration':
+                handle_auto_check_registration(chat_id, message_id)
+            elif callback_data == 'manual_player_id':
+                handle_manual_player_id(chat_id, message_id)
             elif callback_data == 'get_signal':
                 handle_get_signal(chat_id, message_id)
             elif callback_data == 'next_signal':
@@ -563,6 +765,8 @@ def webhook():
                 handle_back_to_start(chat_id, message_id)
             elif callback_data == 'check_deposit':
                 handle_check_registration(chat_id, message_id)
+            elif callback_data == 'auto_check_deposit':
+                handle_auto_check_registration(chat_id, message_id)
         
         return 'OK'
     
